@@ -35,7 +35,13 @@ namespace DSA.Lab00
             // TODO:
             // Return the player with the highest score.
             // Return null when the collection is empty.
-            return null;
+
+            Player? highest = null;
+            foreach (Player player in _players)
+            {
+                if (highest == null || player.Score > highest.Score) highest = player;
+            }
+            return highest;
         }
 
         public bool ContainsName(string name)

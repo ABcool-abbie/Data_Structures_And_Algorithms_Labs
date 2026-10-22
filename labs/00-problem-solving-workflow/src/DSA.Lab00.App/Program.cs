@@ -28,3 +28,15 @@ else
 
 Console.WriteLine();
 Console.WriteLine("Next: open the lab README and work through the tasks.");
+
+//HighestScore Temp Test
+Player? highest = collection.FindHighestScore();
+
+if (highest != null)
+{
+    Console.WriteLine($"Highest: {highest?.Name} ({highest?.Score})");
+}
+else
+{
+    Console.WriteLine("Highest not found.");
+}
