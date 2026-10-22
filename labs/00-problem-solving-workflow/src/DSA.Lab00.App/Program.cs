@@ -40,3 +40,8 @@ else
 {
     Console.WriteLine("Highest not found.");
 }
+
+//ContainsName Temp Test
+Console.WriteLine($"Contains Bo: {collection.ContainsName("Bo")}");
+Console.WriteLine($"Contains bo: {collection.ContainsName("bo")}");
+Console.WriteLine($"Contains Zed: {collection.ContainsName("Zed")}");

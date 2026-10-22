@@ -49,6 +49,12 @@ namespace DSA.Lab00
             // TODO:
             // Return true when a player with exactly this name exists.
             // Use case-sensitive comparison for this lab.
+            // return false;
+
+            foreach (Player player in _players)
+            {
+                if (player.Name == name) return true;
+            }
             return false;
         }
     }
