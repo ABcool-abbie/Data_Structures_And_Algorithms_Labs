@@ -75,6 +75,16 @@ namespace DSA.Lab01.Tests
 
             Assert.That(result, Is.EqualTo(-1));
         }
+
+        [Test]
+        public void BinarySearch_ReturnsMinusOneForEmptyArray()
+        {
+            int[] values = { };
+
+            int result = SearchAlgorithms.BinarySearch(values, 7);
+
+            Assert.That(result, Is.EqualTo(-1));
+        }
     }
 
     [TestFixture]
